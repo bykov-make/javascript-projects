@@ -28,92 +28,17 @@ A number conversion tool transforming Arabic numerals to ancient Roman numerals.
 - **Algorithm**: Efficient greedy subtraction method
 - **Tech**: Robust validation system with historical accuracy
 
-## 🛠️ Technologies Used
+A growing collection of interactive web applications built with HTML, CSS, and JavaScript.
 
-- **Frontend**: HTML5, CSS3, Vanilla JavaScript
-- **Styling**: CSS Grid, Flexbox, Custom Properties (CSS Variables)
-- **Features**: DOM Manipulation, Event Handling, Regular Expressions, Algorithms
-- **Design**: Responsive layouts, accessible interfaces, consistent theming
+## Featured Projects:
+🔢 **Kill the Dragon Game** - A fantasy role-playing game where players battle monsters, collect weapons, and explore different locations.
 
-## 🚀 Getting Started
+📊 **Spreadsheet App** - Data table with calculation capabilities.
 
-Each project is self-contained and can be run independently:
+🔁 **Palindrome Checker** - Text analysis tool with real-time validation.
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   ```
+🏛️ **Roman Numeral Converter** - Number conversion utility.
 
-2. **Navigate to any project folder**
-   ```bash
-   cd project-name
-   ```
+Coming soon: Phone Number validator.
 
-3. **Open `index.html` in your browser**
-    - No build process or dependencies required
-    - Works in any modern web browser
-
-## 📁 Project Structure
-
-```
-repository/
-├── rpg-game/
-│   ├── index.html
-│   ├── styles.css
-│   ├── script.js
-│   └── README.md
-├── spreadsheet/
-│   ├── index.html
-│   ├── styles.css
-│   ├── script.js
-│   └── README.md
-├── palindrome-checker/
-│   ├── index.html
-│   ├── styles.css
-│   ├── script.js
-│   └── README.md
-├── roman-numeral-converter/
-│   ├── index.html
-│   ├── styles.css
-│   ├── script.js
-│   └── README.md
-└── README.md (this file)
-```
-
-## 🎯 Learning Objectives
-
-This portfolio demonstrates:
-- **Game Development**: State management, user interaction, game loops
-- **Data Processing**: Algorithm implementation, mathematical operations
-- **String Manipulation**: Text analysis, pattern matching, validation
-- **User Experience**: Input validation, error handling, responsive feedback
-- **Code Organization**: Modular functions, clean separation of concerns
-
-## 🌟 Project Highlights
-
-| Project | Key Skills Demonstrated |
-|---------|------------------------|
-| RPG Game | Game state management, event handling, progressive complexity |
-| Spreadsheet | Formula parsing, recursive functions, data structures |
-| Palindrome Checker | String manipulation, regex, algorithm optimization |
-| Roman Converter | Mathematical algorithms, input validation, historical systems |
-
-## 🤝 Contributing
-
-While this is primarily a personal portfolio, suggestions and feedback are welcome! Feel free to:
-- Report bugs or issues
-- Suggest new features or improvements
-- Share your own implementations
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-**💡 About the Developer**  
-This portfolio represents a journey in mastering front-end development fundamentals through practical project-based learning. Each application solves unique problems while demonstrating clean code practices and user-centered design.
-
-*Built with passion for coding and continuous learning.* 🚀
-
-No AI was hurt when improving this readme file. 
+Each project showcases different aspects of front-end development and problem-solving.
