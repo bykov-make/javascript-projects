@@ -28,6 +28,12 @@ A number conversion tool transforming Arabic numerals to ancient Roman numerals.
 - **Algorithm**: Efficient greedy subtraction method
 - **Tech**: Robust validation system with historical accuracy
 
+### [US Telephone Number Validator](/telephone-validator/) 📞✅
+A validation tool that checks US phone numbers against multiple standard formats.
+- **Features**: Supports 7+ common formats, real-time validation, visual feedback
+- **Formats**: `1 555-555-5555`, `(555)555-5555`, `5555555555`, and more
+- **Tech**: Regular expression validation with elegant UI/UX
+
 ## 🛠️ Technologies Used
 
 - **Frontend**: HTML5, CSS3, Vanilla JavaScript
@@ -50,8 +56,8 @@ Each project is self-contained and can be run independently:
    ```
 
 3. **Open `index.html` in your browser**
-    - No build process or dependencies required
-    - Works in any modern web browser
+   - No build process or dependencies required
+   - Works in any modern web browser
 
 ## 📁 Project Structure
 
@@ -77,6 +83,11 @@ repository/
 │   ├── styles.css
 │   ├── script.js
 │   └── README.md
+├── telephone-validator/
+│   ├── index.html
+│   ├── styles.css
+│   ├── script.js
+│   └── README.md
 └── README.md (this file)
 ```
 
@@ -88,6 +99,7 @@ This portfolio demonstrates:
 - **String Manipulation**: Text analysis, pattern matching, validation
 - **User Experience**: Input validation, error handling, responsive feedback
 - **Code Organization**: Modular functions, clean separation of concerns
+- **Form Validation**: Regular expressions, format checking, user feedback systems
 
 ## 🌟 Project Highlights
 
@@ -97,6 +109,7 @@ This portfolio demonstrates:
 | Spreadsheet | Formula parsing, recursive functions, data structures |
 | Palindrome Checker | String manipulation, regex, algorithm optimization |
 | Roman Converter | Mathematical algorithms, input validation, historical systems |
+| Telephone Validator | Regular expressions, format validation, user interface design |
 
 ## 🤝 Contributing
 

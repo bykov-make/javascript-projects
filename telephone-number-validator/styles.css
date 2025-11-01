@@ -1,0 +1,183 @@
+/* styles.css */
+/* Grey Scale Color Variables */
+:root {
+    /* Background Colors */
+    --bg-primary: #f5f5f5;
+    --bg-container: #ffffff;
+    --bg-input: #fafafa;
+    --bg-input-focus: #ffffff;
+    --bg-results: #f9f9f9;
+
+    /* Text Colors */
+    --text-primary: #333333;
+    --text-heading: #222222;
+    --text-light: #ffffff;
+
+    /* Border Colors */
+    --border-container: #dddddd;
+    --border-input: #cccccc;
+    --border-input-focus: #888888;
+    --border-results: #eeeeee;
+
+    /* Button Colors */
+    --btn-check-bg: #666666;
+    --btn-check-hover: #555555;
+    --btn-clear-bg: #999999;
+    --btn-clear-hover: #888888;
+
+    /* Shadow Colors */
+    --shadow-container: rgba(0, 0, 0, 0.1);
+
+    /*Alert Colors*/
+    --alert-color: #8B4513; /* Deep burgundy */
+    --alert-color-light: #A0522D; /* Lighter burgundy for hover */
+    --alert-bg: #FAEBE7; /* Very light pinkish background */
+
+    /* Success Colors */
+    --success-color: #556B2F;        /* Dark olive green */
+    --success-color-light: #6B8E23;  /* Olive drab */
+    --success-bg: #FAFBEF;           /* Creamy off-white */
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--bg-container);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px var(--shadow-container);
+    border: 1px solid var(--border-container);
+
+}
+
+h1 {
+    text-align: center;
+    color: var(--text-heading);
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid var(--border-input);
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: var(--bg-input);
+    color: var(--text-primary);
+    text-align: center;
+}
+
+input[type="text"]::placeholder {
+    text-align: center;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: var(--border-input-focus);
+    background-color: var(--bg-input-focus);
+}
+
+button {
+    padding: 12px 24px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-container{
+    display : flex;
+    gap: 10px;
+    justify-content: center;
+    width: 100%
+}
+#check-btn {
+    background-color: var(--btn-check-bg);
+    color: var(--text-light);
+}
+
+#check-btn:hover {
+    background-color: var(--btn-check-hover);
+}
+
+#clear-btn {
+    background-color: var(--btn-clear-bg);
+    color: var(--text-light);
+}
+
+#clear-btn:hover {
+    background-color: var(--btn-clear-hover);
+}
+
+#results-div {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+    min-height: 50px;
+    background-color: var(--bg-results);
+    border: 1px solid var(--border-results);
+    color: var(--text-primary);
+}
+
+#results-div.error{
+    background-color: var(--alert-bg);
+    border-color: var(--alert-color);
+    color: var(--alert-color);
+    text-align: center;
+}
+
+#results-div.success {
+    color: var(--success-color);
+    text-align: center;
+    background-color: var(--success-bg);
+    border: 1px solid var(--success-color);
+    border-left: 4px solid var(--success-color);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    div {
+        padding: 20px;
+    }
+
+    .container{
+        padding: 20px;
+    }
+
+    .button-container {
+        flex-direction: row;
+    }
+    button{
+        flex: 1;
+        min-width: 120px;
+    }
+
+}
