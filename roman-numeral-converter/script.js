@@ -2,32 +2,25 @@ const numberInput= document.getElementById("number");
 const btn = document.getElementById("convert-btn");
 const output = document.getElementById("output");
 
-const checkUserInput = () => {
-    const inputStr = parseInt(numberInput.value)
+function showOutput(message, isError=true){
+    output.style.color = isError ? "var(--error-color)" : "var(--success-color)";
+    output.textContent = message;
+    output.classList.remove("hidden")
+}
 
-    if(inputStr === 0 || inputStr ===""){
-        output.style.color = "var(--error-color)";
-        output.textContent = "Please enter a number";
-        output.classList.remove("hidden");
+const checkUserInput = () => {
+    const inputInt = parseInt(numberInput.value.trim())
+
+    if (!numberInput.value || isNaN(inputInt)){
+        showOutput("Please enter a valid number.");
         return;
     }
-
-    const inputInt = parseInt(numberInput.value)
-    if (!numberInput.value || isNaN(inputInt)){
-        output.style.color = "var(--error-color)";
-        output.textContent = "Please enter a valid number";
-        output.classList.remove("hidden");
-    }else if (inputInt < 0){
-        output.style.color = "var(--error-color)";
-        output.textContent = "Please enter a number greater than or equal to 1";
-        output.classList.remove("hidden")
-    }else if (inputInt >= 4000){
-        output.style.color = "var(--error-color)  ";
-        output.textContent = "Please enter a number less than or equal to 3999";
+    if (inputInt < 1){
+        showOutput("Please enter a number greater than or equal to 1");
+    }else if (inputInt > 3999){
+        showOutput("Please enter a number less than or equal to 3999");
     }else{
-        output.style.color = "var(--success-color)"
-        output.textContent = convertToRoman(inputInt)
-        output.classList.remove("hidden")
+        showOutput(convertToRoman(inputInt),false)
     }
 }
 
