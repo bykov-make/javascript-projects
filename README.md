@@ -27,15 +27,22 @@ A number conversion tool transforming Arabic numerals to ancient Roman numerals.
 - **Features**: Handles numbers 1-3999, input validation, color-coded feedback
 - **Algorithm**: Efficient greedy subtraction method
 - **Tech**: Robust validation system with historical accuracy
-
+  
 ### [US Telephone Number Validator](/telephone-validator/) 📞✅
 A validation tool that checks US phone numbers against multiple standard formats.
 - **Features**: Supports 7+ common formats, real-time validation, visual feedback
 - **Formats**: `1 555-555-5555`, `(555)555-5555`, `5555555555`, and more
 - **Tech**: Regular expression validation with elegant UI/UX
 
-## 🛠️ Technologies Used
+### [Dessert Shop E-Commerce](/shopping-cart/) 🍰🛒
+A responsive e-commerce application with shopping cart functionality.
+- **Features**: Product catalog, cart management, tax calculation, real-time updates
+- **Categories**: Cupcakes, macarons, ice cream, pretzels
+- **Tech**: ES6 classes, dynamic product generation, cart state management
 
+
+
+## 🛠️ Technologies Used
 - **Frontend**: HTML5, CSS3, Vanilla JavaScript
 - **Styling**: CSS Grid, Flexbox, Custom Properties (CSS Variables)
 - **Features**: DOM Manipulation, Event Handling, Regular Expressions, Algorithms
